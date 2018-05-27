@@ -1,0 +1,1835 @@
+/* monotonic CSS stylesheet         */
+/* Creator:             Mugi - 2018 */
+/* Created for:        RetroWith.in */
+
+/* ---- Import base elements (always include these for fallback) ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+@import url(modular_base/category_icons.css);	/* category icons                        */
+@import url(modular_base/forum_icons.css);	/* forum icons                           */
+@import url(modular_base/ratio_colors.css);	/* ratio colors                          */
+@import url(modular_base/userclasses.css);	/* user class colors                     */
+@import url(modular_base/expansion.css);	/* global add-on for future content      */
+@import url(modular_base/casino.css);		/* blackjack.php global override         */
+
+/* category icons override for monotonic */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+img.remix				{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/music_remix.png); }
+img.other				{ background: url(modular_base/category_icons/music_other.png); }
+img.arranged				{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/music_arranged.png); }
+img.game				{ background: url(modular_base/category_icons/music_ost.png); }
+img.roms				{ background: url(modular_base/category_icons/misc_romz.png); }
+img.emulators				{ background: url(modular_base/category_icons/emulators.png); }
+img.movies				{ background: url(modular_base/category_icons/videos.png); }
+img.abandonware				{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/abandonware.png); }
+img.dos					{ background: url(modular_base/category_icons/dos.png); }
+img.windows				{ background: url(modular_base/category_icons/windows.png); }
+img.windows3x				{ background: url(modular_base/category_icons/windows3x.png); }
+img.mac					{ background: url(modular_base/category_icons/mac.png); }
+img.linux				{ background: url(modular_base/category_icons/linux.png); }
+img.acorn				{ background: url(modular_base/category_icons/acorn.png); }
+img.amstrad				{ background: url(modular_base/category_icons/amstrad.png); }
+img.pc_other				{ background: url(modular_base/category_icons/pc_other.png); }
+img.misc				{ background: url(modular_base/category_icons/misc.png); }
+img.bios				{ background: url(modular_base/category_icons/bios.png); }
+img.gameguides				{ background: url(modular_base/category_icons/guides.png); }
+img.retro_computing			{ background: url(modular_base/category_icons/retro_computing.png); }
+img.cell				{ background: url(modular_base/category_icons/cellphone.png); }
+img.atari_2600				{ background: url(modular_base/category_icons/atari_2600.png); }
+img.bandai_wswan			{ background: url(modular_base/category_icons/bandai_wswan.png); }
+img.nec_turbografx			{ background: url(modular_base/category_icons/nec_turbografx.png); }
+img.neogeo_pocket			{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/neogeo_pocket.png); }
+img.neogeo				{ background: url(modular_base/category_icons/neogeo.png); }
+img.nintendo_64				{ background: url(modular_base/category_icons/nintendo_64.png); }
+img.nintendo_gameboy			{ background: url(modular_base/category_icons/nintendo_gameboy.png); }
+img.nintendo_gcn			{ background: url(modular_base/category_icons/nintendo_gcn.png); }
+img.nintendo_nes			{ background: url(modular_base/category_icons/nintendo_nes.png); }
+img.nintendo_snes			{ background: url(modular_base/category_icons/nintendo_snes.png); }
+img.nintendo_gba			{ background: url(modular_base/category_icons/nintendo_gba.png); }
+img.nintendo_ds				{ background: url(modular_base/category_icons/nintendo_ds.png); }
+img.panasonic_3do			{ background: url(modular_base/category_icons/panasonic_3do.png); }
+img.phillips_cdi			{ background: url(modular_base/category_icons/philips_cdi.png); }
+img.sega_dreamcast			{ background: url(modular_base/category_icons/sega_dreamcast.png); }
+img.sega_gamegear			{ background: url(modular_base/category_icons/sega_gamegear.png); }
+img.sega_genesis			{ background: url(modular_base/category_icons/sega_genesis.png); }
+img.sega_saturn				{ background: url(modular_base/category_icons/sega_saturn.png); }
+img.sega_cd				{ background: url(modular_base/category_icons/sega_cd.png); }
+img.sony_ps2				{ background: url(modular_base/category_icons/sony_ps2.png); }
+img.sony_psx				{ background: url(modular_base/category_icons/sony_psx.png); }
+img.sony_psp				{ background: url(modular_base/category_icons/sony_psp.png); }
+img.amiga_computer			{ background: url(modular_base/category_icons/amiga_computer.png); }
+img.amiga_cd32 				{ background: url(modular_base/category_icons/amiga_cd32.png); }
+img.atari_jaguar			{ background: url(modular_base/category_icons/atari_jaguar.png); }
+img.atari_lynx				{ background: url(modular_base/category_icons/atari_lynx.png); }
+img.commodore_computer			{ background: url(modular_base/category_icons/commodore_computer.png); }
+img.mattel_intellivision		{ background: url(modular_base/category_icons/mattel_intellivision.png); }
+img.mb_vectrex				{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/mb_vectrex.png); }
+img.nintendo_virtualboy			{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/nintendo_virtualboy.png); }
+img.sega_mastersystem			{ background: url(modular_base/category_icons/sega_mastersystem.png); }
+img.sinclair_computer			{ background: url(modular_base/category_icons/sinclair_computer.png); }
+img.nintendo_other			{ background: url(modular_base/category_icons/nintendo_other.png); }
+img.sega_other				{ background: url(modular_base/category_icons/sega_other.png); }
+img.atari_other				{ background: url(modular_base/category_icons/atari_other.png); }
+img.commodore_other			{ background: url(modular_base/category_icons/commodore_other.png); }
+img.magazines				{ background: url(modular_base/category_icons/magazines.png); }
+img.arcade				{ background: url(modular_base/category_icons/arcade.png); }
+img.game_books				{ background: url(modular_base/category_icons/game_books.png); }
+img.dos_utils 				{ background: url(modular_base/category_icons/dos_utils.png); }
+img.zodiac 				{ background: url(modular_base/category_icons/zodiac.png); }
+img.microsoft_xbox 			{ background: url(modular_base/category_icons/microsoft_xbox.png); }
+img.fiction				{ background: url(modular_base/category_icons/fiction.png); }
+img.technical				{ background: url(modular_base/category_icons/technical.png); }
+img.tabletop				{ background: url(modular_base/category_icons/tabletop.png); }
+img.other_books				{ background: url(modular_base/category_icons/other_books.png); }
+
+/* ---- forum icons override for monotonic ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+img.unlockednew 			{ background-image: url(monotonic/forum_new.gif); }
+img.unlocked 				{ background-image: url(monotonic/forum_nonew.gif); }
+img.lockednew 				{ background-image: url(monotonic/forum_lockednew.gif); }
+img.locked 				{ background-image: url(monotonic/forum_lockednonew.gif); }
+img.unlockednewpost 			{ background-image: url(monotonic/forum_posted_new.gif); }
+img.unlockedpost 			{ background-image: url(monotonic/forum_posted_nonew.gif); }
+img.lockednewpost 			{ background-image: url(monotonic/forum_locked_posted_new.gif); }
+img.lockedpost 				{ background-image: url(monotonic/forum_locked_posted_nonew.gif); }
+img.link 				{ background-image: url(monotonic/forum_link.gif); }
+
+/* ---- ratio color override for monotonic ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+.r00					{ color: #F70900; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r01					{ color: #E81800; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r02					{ color: #DA2600; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r03					{ color: #CB3500; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r04					{ color: #BC4400; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r05					{ color: #AD5300; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r06					{ color: #9F6100; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r07					{ color: #907000; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r08					{ color: #817F00; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r09					{ color: #728E00; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r10					{ color: #00A000; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r20					{ color: #00C000; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r50					{ color: #00E000; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.r99					{ color: #00FF00; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.rinf					{ color: #C0C0C0; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+.rnone					{ color: #C0C0C0; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+
+/* ---- user classes override for monotonic ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* UserClasses */
+
+span.userlink				{ text-decoration: none; }
+
+span.UC_GLOBAL_ADMINISTRATOR		{ color: #D96767 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_ADMINISTRATOR			{ color: #FFBA4D !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_TECH_ADMINISTRATOR		{ color: #9C6464 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_TECH_MODERATOR			{ color: #4DD34D !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_MODERATOR			{ color: #A78059 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_TORRENT_MODERATOR		{ color: #649C64 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_FORUM_MODERATOR			{ color: #00BBBB !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_HONORED_MEMBER			{ color: #FF80FF !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_ELITE_VIP			{ color: #B79765 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_VIP				{ color: #80649C !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_ELITE_USER			{ color: #64649C !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_POWER_USER			{ color: #64809C !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_USER				{ color: #A0A0A0 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+span.UC_PEASANT				{ color: #643222 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+
+/* UserClass Hovers */
+
+span.UC_GLOBAL_ADMINISTRATOR:hover	{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_ADMINISTRATOR:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_TECH_ADMINISTRATOR:hover	{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_TECH_MODERATOR:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_MODERATOR:hover			{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_TORRENT_MODERATOR:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_FORUM_MODERATOR:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_HONORED_MEMBER:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_ELITE_VIP:hover			{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_VIP:hover			{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_ELITE_USER:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_POWER_USER:hover		{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_USER:hover			{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+span.UC_PEASANT:hover			{ color: #C0C0C0 !important; text-shadow: 2px 2px 3px #000000; }
+
+/* SHODAN */
+
+span.UC_SYSTEM				{ color:#6432C8 !important; text-shadow: 2px 2px 3px #000000; font-weight: normal !important; }
+a span.UC_SYSTEM			{ font-size:100% !important; }
+
+/* ---- poll bar graphics ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+img.poll				{ background-image: url(monotonic/poll_bar_middle.gif); }
+img.pollright				{ background-image: url(monotonic/poll_bar_right.gif); }
+img.pollleft				{ background-image: url(monotonic/poll_bar_left.gif); }
+
+
+/* ---- progress bars ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+div.progress_bar_container		{ background-color: #333333; position: relative; margin-bottom: 3px; padding-bottom: 1px; height: 12px;
+					  border: none; border-radius: 8px; }
+div.progress_bar			{ position: absolute; width: 50%; top: 0; bottom: 0; left: 0; box-shadow: inset 1px 1px 1px #FFFFFF;
+					  border-radius: 8px; }
+
+div.progress_bar.low			{ background: #ff9999;
+					  background: -moz-linear-gradient(top,  #ff9999 0%, #aa0000 100%);
+					  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9999), color-stop(100%,#aa0000));
+					  background: -webkit-linear-gradient(top,  #ff9999 0%,#aa0000 100%);
+					  background: -o-linear-gradient(top,  #ff9999 0%,#aa0000 100%);
+					  background: -ms-linear-gradient(top,  #ff9999 0%,#aa0000 100%);
+					  background: linear-gradient(to bottom,  #ff9999 0%,#aa0000 100%); }
+div.progress_bar.normal			{ background: #9ec9ef;
+					  background: -moz-linear-gradient(top,  #9ec9ef 0%, #0058dd 100%);
+					  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ec9ef), color-stop(100%,#0058dd));
+					  background: -webkit-linear-gradient(top,  #9ec9ef 0%,#0058dd 100%);
+					  background: -o-linear-gradient(top,  #9ec9ef 0%,#0058dd 100%);
+					  background: -ms-linear-gradient(top,  #9ec9ef 0%,#0058dd 100%);
+					  background: linear-gradient(to bottom,  #9ec9ef 0%,#0058dd 100%); }
+div.progress_bar.full			{ background: #99ff99;
+					  background: -moz-linear-gradient(top,  #99ff99 0%, #00ff00 100%);
+					  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99ff99), color-stop(100%,#00ff00));
+					  background: -webkit-linear-gradient(top,  #99ff99 0%,#00ff00 100%);
+					  background: -o-linear-gradient(top,  #99ff99 0%,#00ff00 100%);
+					  background: -ms-linear-gradient(top,  #99ff99 0%,#00ff00 100%);
+					  background: linear-gradient(to bottom,  #99ff99 0%,#00ff00 100%); }
+
+div.progress_bar_text			{ color: #000000; position: relative; margin: 1px auto 0px auto; display: table; font-size: 9px;
+					  font-weight: normal; text-shadow: 1px 1px 3px #666666; }
+
+/* ---- alerts ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+div.alert_golden,
+div.alert_freeleech,
+div.alert_country,
+div.alert_newpm,
+div.alert_topicsubscribe,
+div.alert_commentsubscribe,
+div.alert_notracker,
+div.alert_lowerclass,
+div.alert_helpdesk,
+div.alert_reports			{ margin: -12px 0px 14px -10px; width: 100%; padding: 4px 14px 4px 20px; text-align: center;
+					  font-weight: bold; color: #FFFFFF; text-shadow: 2px 2px 3px #000000; background: transparent; }
+
+div.alert_golden 			{ background: url(monotonic/alert_gold.png) top left repeat-x; }
+div.alert_freeleech 			{ background: url(monotonic/alert_blue.png) top left repeat-x; }
+div.alert_country 			{ background: url(monotonic/alert_red.png) top left repeat-x; }
+div.alert_newpm 			{ background: url(monotonic/alert_red.png) top left repeat-x; }
+div.alert_topicsubscribe 		{ background: url(monotonic/alert_red.png) top left repeat-x; }
+div.alert_commentsubscribe 		{ background: url(monotonic/alert_red.png) top left repeat-x; }
+div.alert_notracker 			{ background: url(monotonic/alert_red.png) top left repeat-x; }
+div.alert_lowerclass 			{ background: url(monotonic/alert_red.png) top left repeat-x; }
+div.alert_helpdesk 			{ background: url(monotonic/alert_green.png) top left repeat-x; }
+div.alert_reports 			{ background: url(monotonic/alert_red.png) top left repeat-x; }
+
+div.alert_clear > table.bb_backcolor	{ margin:0 auto 0; }
+div.alert_clear table.bb_backcolor+br	{ display: none; }
+
+/* ---- Input styling ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+input, select, textarea			{ font-size: 9px; font-family: "tahoma"; }
+
+input					{ color: #DCC7AB !important; padding: 2px 3px 2px 3px; background: #1B1B1B !important;
+					  border: 1px solid #101010; border-radius: 6px; margin: 3px 0px 3px 0px; }
+input:hover				{ color: #FFCA8B !important; padding: 2px 3px 2px 3px; background: #101010 !important;
+					  border: 1px solid #000000; border-radius: 6px; margin: 3px 0px 3px 0px; }
+input:disabled				{ color: #444444 !important; padding: 2px 3px 2px 3px; background: #101010 !important;
+					  border: 1px solid #000000; border-radius: 6px; margin: 3px 0px 3px 0px; }
+input:disabled:hover			{ box-shadow: 0px 0px 12px #444444; }
+textarea				{ color: #DCC7AB !important; padding: 4px 4px 4px 4px; background: #1B1B1B !important;
+					  border: 1px solid #101010; border-radius: 6px; }
+textarea:hover				{ color: #FFCA8B !important; padding: 4px 4px 4px 4px; background: #101010 !important;
+					  border: 1px solid #000000; border-radius: 6px; }
+
+/* ---- user toolbox (user stats at top) styling ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#user_toolbox				{ overflow: hidden; text-align: center; background: url(monotonic/statshdr.png) bottom left repeat-x;
+					  padding-top: 38px; margin-left: -10px; }
+#user_toolbox>span			{ padding-left: 40px; padding-right: 40px; }
+.user_toolbox_ratio			{ color: #DCC7AB !important; padding-left: 10px; }
+.user_toolbox_spirit			{ color: #DCC7AB !important; padding-left: 10px; }
+.user_toolbox_activity			{ color: #DCC7AB !important; padding-left: 10px; }
+
+	/* ---- workarounds for killing hardcoded <br> tags from php while ---- */
+	/* ---- not breaking the spirit level tooltip (keep these here!!)  ---- */
+#user_toolbox br			{ display: none; }
+#user_toolbox .tooltip			{ z-index:2 !important; }
+#user_toolbox .tooltip br		{ display: inline; }
+
+/* ---- searchbars styling ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+#searchbars				{ margin-left: -10px; margin-right: -10px; overflow: hidden; background: #101010 url(monotonic/header.png) repeat;
+					  clear: both; text-align: center; height: 56px; }
+#searchbars ul				{ padding: 5px 4px 4px 0; margin: 0; list-style: none; }
+#searchbars ul li			{ display: inline-block; }
+#searchbars input			{ background: #1B1B1B url(monotonic/srcimg.png) no-repeat !important; border-radius: 9px; height: 18px; width: 125px;
+					  margin: 0px 15px 0px 15px; padding: 0px 10px 0px 30px; }
+#searchbars input:hover			{ background: #101010 url(monotonic/srcimg.png) no-repeat !important; }
+#searchbars form			{ display: inline-block; }
+#searchbars form p			{ display: inline-block; }
+
+#searchbars li form fieldset.options		{ border-top: none; display: none; margin: 5px 0; padding: 5px 0; position: absolute; top: 100%; left: 0; }
+#searchbars li form:hover fieldset.options	{ display: block; }
+#searchbars li form fieldset.options input	{ background: none; float: left; margin: 10px 0; }
+#searchbars li form fieldset.options label	{ display: block; margin: 0; padding: 0; }
+
+/* ---- sidebar (top drop-down menus in monotonic) ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+#sidebar				{ padding: 8px 6px 8px 6px; margin-right: 8px; display: block; }
+#sidebar ul				{ padding:0px 0px 0px 0px; margin:0; margin-bottom: 4px; border: none; }
+#sidebar li.header			{ color: #DCC7AB !important; text-shadow: 1px 1px 3px #000000; font-weight: normal;
+					  display: inline; padding-bottom: 5px; margin-bottom: 0px; }
+#sidebar li				{ display: block; list-style-type: none; }
+#sidebar .rollup_btn			{ display: none!important; }
+div#sidebar				{ position: absolute; left: 26%; top: 126px; right: 0px; z-index: 1 !important; }
+div#sidebar ul				{ float: left; width: 11%; padding: 0; }
+div#sidebar ul li.header		{ padding:0; margin:0; border-bottom:none; }
+div#sidebar ul li			{ display:none; }
+div#sidebar ul:hover li			{ display:block; padding-bottom: 3px; padding-top: 3px; }
+div#sidebar ul:hover li a		{ text-decoration:none; display:inline-block; }
+div#sidebar ul:hover li:hover		{ background-color: #101010; border-bottom: 1px solid #2B2B2B; margin-bottom: -1px; }
+div#sidebar ul:hover			{ background: #1B1B1B; border-radius: 6px; border: 1px solid #101010; box-shadow: 0px 0px 12px #000000;
+					  padding: 5px 0px 8px 0px; margin: -9px -1px 0px -1px; }
+
+/* ---- link styling ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+a					{ color: #DCC7AB; text-shadow: 2px 2px 3px #000000; outline: none; text-decoration: none !important; font-weight: normal !important; }
+a:hover					{ color: #FFCA8B; text-shadow: 2px 2px 3px #000000; text-decoration: none !important; font-weight: normal !important; }
+
+/* ---- rollup styling ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+.rollup_btn				{ font-size: 9pt; float: right; clear: right; text-decoration: none; vertical-align: sub; padding-right: 2px; opacity: .65; }
+
+ul.rollup				{ padding: 0; margin-bottom: 1px; padding: 0px!important; }
+ul.rollup li				{ display: none; }
+ul.rollup li.header			{ margin: 0px !important; border-bottom: none !important; display: block; }
+
+div.rollup div.frame			{ display: none; }
+div.rollup div.frametop_simple		{ margin-bottom: 6px; }
+div.rollup div.frame_simple		{ display: none; }
+div.rollup table.frame br		{ display: none; }
+div.rollup table tr td			{ display: none; }
+div.rollup table tr td.colhead		{ display: table-cell; padding: 4px; }
+div.rollup table.frame			{ margin-bottom: 8px !important; }
+div.rollup td.colhead span.small	{ display: none; }
+div.rollup span.small			{ display: none; }
+div.rollup div.frametop			{ margin-bottom: 6px; border-bottom: none; }
+div.rollup div.frametop_alt		{ margin-bottom: 6px; border-bottom: none; }
+
+/* ---- site main elements ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+table {
+	background: #1B1B1B;
+	text-align:left;
+	padding: 4px 12px 4px 12px;
+	border: 1px solid #101010;
+	border-radius: 6px;
+}
+
+body {
+	background: #000000 url(monotonic/body.gif) fixed top center;
+	font-family: "tahoma";
+	font-size: 8pt;
+	color: #666666;
+	margin: 0 auto;
+	padding: 0px;
+	display: table;
+	width: 99%;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+}
+
+#sitewrap {
+	margin-left: -9px;
+	margin-right: -9px;
+	overflow: hidden;
+	padding: 10px 5px;
+	background: url(monotonic/01.png) repeat-x;
+}
+
+/* begin_frame() */
+div.framewrap {
+	width: 100%;
+	padding:0;
+	margin:0;
+}
+
+div.frametop {
+	margin: 0;
+	padding: 0px 5px 0px 5px;
+	font-size: 10pt;
+	font-weight: bold;
+}
+div.frame {
+	margin: 0 0 5px 0;
+
+	text-align:left;
+}
+div.frametop + div.frame {
+	border-top:none;
+}
+div.frametop_simple {
+	margin: 0;
+	padding: 0px 5px 0px 5px;
+	font-size: 8pt;
+	font-weight: bold;
+}
+div.frame_simple {
+	margin: 0;
+	padding: 5px 5px 8px 5px;
+	padding: 0 5px;
+	text-align:left;
+}
+
+div.frame, div.frametop, div.frame_simple, div.frametop_simple, div.frametop_alt {
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Used to wrap table.frame and give it
+a max-width.  This is a workaround for
+a webkit issue (though I don't think 
+webkit is rendering it 'wrong' per se.)
+*/
+div.table_wrap {
+	display:block;
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1em;
+}
+ 
+table.frame {
+	width:100%;
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 4px;
+}
+table.frame .colhead {
+	font-size:9pt;
+	padding: 4px;
+	padding-bottom:5px;
+	text-align: center;
+}
+div.rollup table.frame td.colhead {
+	padding-top:4px;
+	padding-bottom:4px;
+	margin:0;
+}
+
+.rollup table.frame tr {
+	padding:0;
+	margin:0;
+}
+
+div.frame table {
+	text-align:left;
+}
+
+div.frametop_alt {
+	margin: 0 auto 0;
+	padding: 5px;
+	font-size: 9pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666666;
+	max-width:1200px;
+}
+
+div.frametop_alt a {
+	color:inherit;
+}
+
+div#user_search div.frametop_alt, div#user_search div.frame {
+	width:550px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Currently the rollup buttons are superfluous on
+the topic/comment subscribe pages since there aren't
+any other frames, but this may change.  For now, 
+we'll hide them. */
+#comment_subscriptions .rollup_btn, #topic_subscriptions .rollup_btn {
+	display:none;
+}
+
+#userdetails div#stats .frame{
+	width:75%;
+	margin-left:0;
+	margin-right:0;
+	margin-bottom:11px;
+	float:left;
+}
+#userdetails div#avatar .frame{
+	width:24%;
+	margin:0;
+	margin-left:auto;
+}
+/* Firefox needs this */
+#userdetails div#torrents .frame, #userdetails div#personal .frame {
+	clear:right;
+}
+
+#staff_watched .frame {
+	width:455px;
+}
+
+select {
+	box-sizing: border-box;
+	font-family: "tahoma";
+	font-size: 8pt;
+}
+
+
+/* Mozilla/Firefox image fix */
+img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+table.quote {
+	background: url(monotonic/backdrop.png);
+}
+
+table.quote td {
+	border: none;
+	padding:10px;
+	margin-left:4px;
+}
+
+
+
+table.maintable {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+div.post {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	padding:10px 5px 10px 5px;
+	width:1200px;
+	border: none;
+}
+
+img.logo {
+	display: none;
+	margin: 5px 5px 5px 25px;
+	width: 400px;
+	height: 70px;
+	float: left;
+	background url(monotonic/logo.png) no-repeat;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+
+#header {
+	background: url(monotonic/logo.png) no-repeat;
+	background-position: top center;
+	padding-bottom: 0px;
+}
+
+#wrapper {
+	text-align: center;
+}
+
+#sidebar_search {display:none;}
+
+#content {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+#footer {
+	width: 100%;
+	float: right;
+	clear: both;
+	padding-bottom: 16px;
+}
+
+span.highlight {
+	background-color: #FFFF55;
+	color: #ff0000;
+}
+
+
+span.gog {
+	font-size: 8pt;
+	background: #101010;
+	border: 1px solid #101010;
+	border-radius: 6px;
+	box-shadow: 0px 0px 8px #FFCA8B;
+	color: transparent;
+	padding-left: 9px;
+	padding-right: 9px;
+	position: relative;
+	top: -3px;
+}
+
+h2.maintabletop {
+	border: none;
+	border-bottom: none;
+	padding-left: 5px;
+}
+
+table.maintablebottom {
+	border: none;
+	margin-bottom: 2px;
+}
+
+td.catimg {
+	padding:0px;
+	width:45px;
+	height:45px;
+}
+td.catimg img {
+	width:45px;
+	height:45px;
+}
+
+a.userlink { text-decoration: none; }
+
+a.external_link {
+background: url(monotonic/external.gif) no-repeat right top transparent;
+padding-right:13px;
+}
+
+img.link_icon {
+	border-style: none;
+	margin-left: 2px;
+	vertical-align: baseline;
+}
+
+/* [code] bbcode */
+.code {
+/*	width:600px;*/
+	overflow:scroll;
+	background-color: white;
+	border: none;
+	white-space: pre-wrap;
+}
+pre {
+	overflow:auto;
+	white-space: pre-wrap;
+}
+
+/* [font size=...] bbcode */
+
+span.size_1 {font-size: 0.9em;}
+span.size_2 {font-size: 1.25em;}
+span.size_3 {font-size: 1.5em;}
+span.size_4 {font-size: 1.75em;}
+span.size_5 {font-size: 2.25em;}
+span.size_6 {font-size: 3em;}
+span.size_7 {font-size: 4.5em;}
+
+
+table.embedded {
+	border: none;
+	padding: 1px;
+	text-align: left;
+}
+
+table.embedded td { border: none; }
+
+img.avatar {
+	display: block;
+	max-height: 150px;
+	max-width: 150px;
+	margin: 0 auto;
+	border: none;
+	text-align: center;
+	width: auto !important;
+}
+
+/* This fixes the oversized avatars in IE8 */
+div.avatar_container {
+	width:150px;
+	height:150px;
+	table-layout:fixed;
+}
+
+/* Default avatar */
+div.default_avatar {
+
+	margin: 0 auto;
+
+	width: 150px;
+
+	height: 150px;
+	text-align: center;
+	background-image: url(monotonic/default_avatar.png);
+
+	background-repeat:no-repeat;
+
+}
+
+div.post2 {
+	padding: 0px;
+	padding-right: 5px;
+	background: #1B1B1B;
+	border: 1px solid #101010 !important;
+	border-radius: 6px;
+}
+div.stats_container
+{
+	border:none !important;
+	min-height:152px;
+	width:152px;
+}
+div.stats_container > :first-child
+{
+	padding-top:10px;
+}
+div.stats_container > *
+{
+	padding-left: 10px;
+	max-width:140px;
+}
+div.avatar_container, div.avatar_container, div.system_container
+{
+	height:152px;
+	width:152px;
+}
+div.username_container
+{
+	height:15px;
+}
+div.title_container, div.username_container
+{
+	width:100%;
+	margin-bottom:5px;
+	padding-left:2px;
+}
+div.title_container {
+	padding: 2px;
+}
+
+div.karma_container {
+	width:100%;
+	text-align:right;
+	text-shadow: none!important;
+}
+
+div.post2 div.left div.stats_container {
+	text-align: left;
+}
+
+div.stats_container, div.left:hover div.avatar_container
+{
+	display:none;
+}
+div.avatar_container, div.left:hover div.stats_container, div.username_container + div.stats_container
+{
+	display:block;
+}
+
+
+div.post2 div.left div.stats_container div.sp_ka {
+
+	margin-bottom:4px;
+	vertical-align: top;
+}
+
+div.post2 div.left div.stats_container div.sp_ka img {
+	vertical-align: text-bottom;
+}
+
+#donations {
+	text-align:right;
+	font-weight:bold;
+	margin-right: 7px;
+}
+#donations span {padding-right:10px;}
+#donations .monthly, #donations .my_donations {
+display:inline-block; /*fixes IE7 disappearing content bug */
+}
+#donations .monthly img{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('https://dev9.blacklabel-translations.com/pic/gold_star_20.png');
+	width:20px;
+	height:20px;
+	padding-right:1ex;
+}
+#donations .my_donations img {
+	padding-left: 0px;
+	padding-right: 1ex;
+	width:20px;
+	height:20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.donate0 {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/smilies/noexpression.png');
+	width:18px;
+	height:18px;
+}
+.donate10 {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/smilies/smile1.png');
+	width:18px;
+	height:18px;
+}
+.donate20 {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/smilies/grin.gif');
+	width:18px;
+	height:18px;
+}
+.donate50 {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/smilies/w00t.png');
+	width:18px;
+	height:20px;
+}
+.donate100 {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/smilies/yikes.gif');
+	width:19px;
+	height:25px;
+}
+.paypal img{
+	background-image: url('https://dev9.blacklabel-translations.com/pic/donate.png');
+	width:62px;
+	height:31px;
+	margin-top: 5px;
+}
+
+img.download {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/download.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 14px;
+	width: 14px;
+}
+
+a.bookmark, a.bookmarked {
+	padding-top:15px;
+	padding-left:13px;
+	padding-right:1px;
+	background-image: url('https://dev9.blacklabel-translations.com/pic/bookmark.gif');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	display:inline-block; /* IE7 fix */
+}
+
+a.bookmarked {
+	background-image: url('https://dev9.blacklabel-translations.com/pic/bookmarked.png');
+}
+
+#details a.bookmark, #details a.bookmarked {
+	padding-left:17px; /* bookmark icon width + 4 pixels padding for left of text */
+}
+#details_hm a.bookmark, #details_hm a.bookmarked {
+	padding-left:17px;
+}
+
+img.arrow_upload {
+	background: url('https://dev9.blacklabel-translations.com/pic/arrow_upload.png') no-repeat;
+	height:11px;
+	width:11px;
+	padding:0;
+	padding-right: 2px;
+}
+img.arrow_download {
+	background: url('https://dev9.blacklabel-translations.com/pic/arrow_download.png') no-repeat;
+	height:11px;
+	width:11px;
+	padding-right: 2px;
+}
+
+img.inbox, img.inboxnew, img.sentbox {
+	height:14px;
+	width:22px;
+	vertical-align:middle;
+}
+img.inbox {
+	background-image: url(monotonic/forum_nonew.gif);
+	background-position: 0px -4px;
+}
+img.inboxnew {
+	background-image: url(monotonic/forum_new.gif);
+	background-position: 0px -4px;
+}
+img.sentbox {
+	background-image: url(monotonic/forum_posted_nonew.gif);
+	background-position: 0px -4px;
+}
+
+pre br { display: none; }
+
+pre.nfo {
+	background-color: #333;
+	color: #DDD;
+}
+
+/* Some of this doesn't make much sense, but seems to work.
+Make sure everything works cross-browser before modifying.
+*/
+span.tooltip_word {display:inline-block;text-decoration:none!important;}
+span.tooltip_word:hover {cursor:pointer;}
+span.tooltip_word span.tooltip {display:none; padding:2px 3px; margin-left:8px;text-decoration:none;}
+span.tooltip_word:hover span.tooltip {
+	display:inline;
+	position:absolute;
+	background:#1B1B1B;
+	color:#666666;
+	text-align:left;
+	text-decoration:none;
+	padding: 6px;
+	border: 1px solid #101010;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px #000000;
+}
+
+.comment_bottom .tooltip_word {border-bottom: 0;}
+
+.tooltip {
+	z-index:1;
+}
+
+#user_toolbox span.tooltip_word {border-bottom:none;}
+
+/*
+Fallback tooltip method for IE.  Works with
+a click like a collapse.  Tested in IE8.
+*/
+.tooltip_collapse_word {
+	display:inline-block;
+	position:relative;
+	text-decoration:none!important;
+	cursor:pointer;
+}
+.tooltip_collapse {
+	display:none;
+	position:absolute;
+	background:#ffffff;
+	color:#6c6c6c;
+}
+
+a.widen {
+	margin: 0; padding: 1px;
+	font-size: 12px;
+	line-height: 10px;
+	display: inline-block;
+	font-weight: bold;
+	background-color: #ddddff;
+}
+
+#mainframe tbody {
+	width: 100%;
+}
+
+td.minimal_left {
+	width: 1px;
+	font-size:7pt;
+}
+
+span.tags a {
+	color:#C0C0C0;
+	font-size: 7pt;
+}
+
+span.collapse {
+	text-decoration:underline;
+}
+span.collapse:hover {
+	cursor:pointer;
+	color: white;
+}
+span.collapse>img:first-child {
+	padding-right:2px;
+}
+
+div.clear, .clear, table.clear td {
+	background: transparent;
+	border: 0;
+}
+
+#smileytable {
+	padding-left:20px;
+	padding-right:15px;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.egg{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+/*	-moz-opacity: 0.6;
+	-ms-filter: "alpha(opacity=60)";
+	opacity:.60;*/
+}
+.egg IFRAME{
+	margin-top:32px;
+	left:auto;right:auto;
+}
+.egg {
+    display: table;
+}
+.egg, .egg > div, .egg > div > div {
+    vertical-align: middle;
+	width:100%;
+	height:100%;
+}
+.egg > div {
+    display: table-row;
+}
+.egg > div  > div {
+    display: table-cell;
+}
+.egg a{
+	-moz-opacity: 0.5;
+	-ms-filter: "alpha(opacity=50)";
+	opacity:0.5;
+	margin:5px;
+	color:white!important;
+	background:black!important;
+}
+.egg input {
+	font-family: "tahoma";
+	font-size:3em; 
+	font-weight:bold; 
+	color:#96C8FF; 
+	background-color:black; 
+	border-radius:100px;
+	padding:20px;
+}
+.egg{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+/*	-moz-opacity: 0.6;
+	-ms-filter: "alpha(opacity=60)";
+	opacity:.60;*/
+}
+.beta IFRAME{
+	margin-top:32px;
+	left:auto;right:auto;
+}
+.beta {
+    display: table;
+}
+.beta, .beta > div, .beta > div > div {
+    vertical-align: middle;
+	width:100%;
+	height:100%;
+}
+.beta > div {
+    display: table-row;
+}
+.beta > div  > div {
+    display: table-cell;
+}
+.beta a{
+	-moz-opacity: 0.5;
+	-ms-filter: "alpha(opacity=50)";
+	opacity:0.5;
+	margin:5px;
+	color:blue!important;
+	background:white!important;
+}
+.beta{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index:1001;
+/*	-moz-opacity: 0.6;
+	-ms-filter: "alpha(opacity=60)";
+	opacity:.60;*/
+}
+
+/* For the imagebucketlog... */
+
+dl.imagesoverview {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin: 5px;
+	width: 180px;
+	height: 180px;
+	text-align: center;
+	background-color: gray;
+}
+
+dl.imagesoverview dt.album {
+	background-color: black;
+	color: white;
+	padding: 4px;
+	font-weight: bold;
+}
+
+dl.imagesoverview dt.filename {
+	background-color: black;
+	color: white;
+	padding: 4px;
+	font-size: 11px;
+}
+
+dl.imagesoverview dt.filename a {
+	color: white;
+}
+
+dl.imagesoverview dd {
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+
+dl.imagesoverview dt.plinks {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	font-size: 10px;
+	padding: 2px;
+	color: black;
+}
+
+/* For the countdown until next Featured Torrent reselection. */
+
+
+.logo_preview > div {
+	background-color: #666666;
+	background-image: url('https://dev9.blacklabel-translations.com/pic/transparency.gif');
+}
+.logo_preview > div , .logo_preview  img.logo{
+height:65px; width: 290px; margin:0px; padding:0px;
+}
+.logo_preview  a > img.logo {
+background-size:contain;
+}
+.logo_preview > div {
+margin-left:auto; margin-right:auto;
+}
+.logo_preview {
+text-align:center;float:left; margin:2px; margin-bottom:5px;
+}
+
+
+div.karmabar {
+	width:120px;
+	left:10px;
+}
+
+
+/* New forum post css */
+div.post2 {
+	display: table;
+	text-align: left;
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+div.post2 div, div.post2 a, div.fheader div, dif.fheader a { /* Allows for easy overriding */
+	border-width: 0;
+}
+
+div.post2 div.rightcontent_inner {
+	min-height:175px;
+	background: #1B1B1B;
+	border-left: 1px solid #101010;
+	padding: 15px;
+}
+div.post2 div.left {
+	padding:5px;
+	display: table-cell;
+	width: 150px;
+}
+
+
+hr {
+    background-color: black;
+}
+
+
+
+table.main, table.mainouter {
+	padding: 2px;
+}
+
+table.menubartextbackground {
+	background: transparent;
+}
+
+table.top {
+	padding: 2px;
+}
+
+table.bottom {
+	background: transparent;
+	padding: 2px;
+}
+
+table.message { border: none; }
+img { max-width: 600px; }
+
+
+h3 { font-size: 10pt; }
+p { font-size: 8pt; }
+p.sub { margin-bottom: 4pt; }
+
+td {
+	border-bottom: 1px solid #101010;
+	line-height: 1.1;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+td.embedded {
+	border: none;
+	padding: 1px;
+	text-align: left;
+}
+
+td.bottom {
+	border: none;
+	padding: 1px;
+}
+
+td.heading { font-weight: bold; }
+
+td.text, td.profile_text {
+	padding: 10pt;
+	text-align: left;
+}
+
+td.comment {
+	padding: 10pt;
+	font-size: 8pt;
+	text-align: left;
+}
+
+div.frametop_alt {
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+
+div.frametop_alt .rollup_btn {
+	color:inherit;
+}
+
+td.colhead2 {
+	font-weight: bold;
+}
+
+td.rowhead {
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+}
+
+td.rowcenter {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+}
+
+td.title { font-size: 14pt; }
+
+td.clear {
+	padding: 0px;
+	border: 0px;
+	background: transparent;
+}
+
+font.gray {
+	color: #C0C0C0;
+	text-decoration: underline;
+}
+
+a, span.collapse {
+	text-decoration: underline;
+}
+
+a.index { font-weight: bold; }
+
+a.biglink {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+a.normal {
+	color: black;
+	text-decoration: none;
+}
+
+a.normal:hover { text-decoration: none; }
+
+.important {
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+
+
+.small { font-size: 7pt; line-height: 1.0; margin: auto; }
+.big { font-size: 10pt; }
+img.border { border: none; }
+
+h2, .maintabletop, th, #sidebar li.header{
+	color: black;
+	height:16px;
+}
+
+h2, .maintabletop, th {
+	font-size: 10pt;
+	padding: 0;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+#inbox_new .frametop_alt, #inbox .frametop_alt {
+	text-align:left;
+}
+#inbox_new div[id^="message"] .frametop_alt a, #inbox div[id^="message"] .frametop_alt a{
+text-decoration:none;
+}
+#inbox_new div[id^="message"] .frametop_alt, #inbox div[id^="message"] .frametop_alt {
+	font-weight:normal;
+	font-size:100%;
+	padding:3px;
+	padding-left:1em;
+}
+#inbox_new div[id^="message"] .frame, #inbox div[id^="message"] .frame {
+	padding:1em;
+	margin-bottom:16px;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ (Note: Opera 12.13 too, oddly enough) */
+}
+#inbox_new div.messagewrap, #inbox div.messagewrap {
+	width:1150px;
+}
+
+
+
+
+/* New forum post css */
+
+div.post2 div.rightcontent_inner {
+	word-wrap:break-word;
+}
+
+div.post2 div.right {
+	display: table-cell;
+	vertical-align: top;
+	max-width:1150px;
+}
+
+div.post2 div.righthead {
+	display: table;
+	width: 100%;
+	height: 25px;
+}
+
+div.post2 div.rightcontent {
+	padding: 0px 5px 5px 0px;
+	height: auto;
+}
+
+div.post2 div.rightcontent div.sig {
+	margin-top: 4px;
+	padding-top: 4px;
+	padding-top: 20px;
+}
+
+div.post2 div.rightfoot {
+	position: absolute;
+	display: table;
+	bottom: 0;
+	right: 0;
+	width: 1130px; /* Firefox workaround, a display table-cell can't be relative in that browser so we'll have to position to div.post2 :( */
+	height: 25px;
+}
+
+div.post2 div.cell {
+	vertical-align: middle;
+	padding: 4px; /* Like with all table cells, padding comes on top of height/width so it's 33px effectively. This can be changed with box-sizing. */
+	display: table-cell;
+}
+div.post2 div.row
+{
+	display: table-row;
+}
+
+div.post2 a.button {
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+	width: 60px;
+	display: table-cell;
+	padding: 4px;
+}
+
+div.post2 div.karmabar {
+	margin: 4px 0;
+	display: block;
+	position: relative;
+	height: 10px;
+}
+
+div.post2 div.karmabar div.indicator {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+div.post2 div.karmabar {
+	z-index: 100;
+	padding: 1px 5px 1px 5px;
+/* ------ Lets wizard for some shiny karmabars ------ */
+	/* Old browsers */
+	background: #DCC7AB;
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, #FFCA8B 0%, #B59167 100%); 
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFCA8B), color-stop(100%,#B59167)); 
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top,  #FFCA8B 0%,#B59167 100%); 
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top,  #FFCA8B 0%,#B59167 100%); 
+	/* IE10+ */
+	background: -ms-linear-gradient(top,  #FFCA8B 0%,#B59167 100%); 
+	/* W3C */
+	background: linear-gradient(to bottom,  #FFCA8B 0%,#B59167 100%); 
+/* -------------------------------------------------- */
+	border-radius: 2px 2px 2px 2px;
+	-webkit-box-shadow:inset 1px 1px 1px #FFE6CB;
+	-moz-box-shadow: inset 1px 1px 1px #FFE6CB;
+	box-shadow: inset 1px 1px 1px #FFE6CB;
+	color: #000000;
+	height: 10px;
+	font-size: 9px;
+	line-height: 10px;
+	left: 0;
+}
+
+
+
+.kblabel { display: inline; }
+
+div.post2 div.karmabar div.indicator {
+	border-radius: 0px 2px 2px 0px;
+/* ------ Lets wizard for some shiny karmabars ------ */
+	/* Old browsers */
+	background:  #FF4040;
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, #FF4040 0%, #882020 100%); 
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FF4040), color-stop(100%,#882020)); 
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #FF4040 0%, #882020 100%); 
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #FF4040 0%, #882020 100%); 
+	/* IE10+ */
+	background: -ms-linear-gradient(top, #FF4040 0%, #882020 100%); 
+	/* W3C */
+	background: linear-gradient(to bottom, #FF4040 0%, #882020 100%); 
+/* -------------------------------------------------- */
+	-webkit-box-shadow:inset -1px 1px 1px #FF6060;
+	-moz-box-shadow: inset -1px 1px 1px #FF6060;
+	box-shadow: inset -1px 1px 1px #FF6060;
+}
+
+div.post2 div.nokarma {
+	color: #666666;
+/* ------ Lets wizard for some shiny karmabars ------ */
+	/* Old browsers */
+	background: #1B1B1B;
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, #1B1B1B 0%, #080808 100%); 
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1B1B1B), color-stop(100%,#080808)); 
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #1B1B1B 0%, #080808 100%); 
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #1B1B1B 0%, #080808 100%); 
+	/* IE10+ */
+	background: -ms-linear-gradient(top, #1B1B1B 0%, #080808 100%); 
+	/* W3C */
+	background: linear-gradient(to bottom, #1B1B1B 0%, #080808 100%); 
+/* -------------------------------------------------- */
+	-webkit-box-shadow: inset 1px 1px 1px #505050;
+	-moz-box-shadow: inset 1px 1px 1px #505050;
+	box-shadow: inset 1px 1px 1px #505050;
+}
+
+div.post2 div.sig {
+	background: url(monotonic/sigdiv.gif) top left no-repeat;
+}
+
+/* Forum mod tools table */
+table.fmodtools, div.qreply {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */ 
+	padding: 4px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+table.fmodtools th {
+	background: none; /*somewhere ths are styled globally :/ */
+	font-weight: normal;
+	color: #DCC7AB;	
+	font-weight: bold;
+	width: 200px;
+	padding: 2px;
+	text-align: right;
+}
+
+table.fmodtools td {
+	border: none;
+	padding: 2px;
+}
+
+/* "Breadcrumb" forum links */
+h3.breadcrumbs, h4.breadcrumbs {
+	display: table;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+h4.breadcrumbs{
+/*	text-align:right;*/
+}
+
+/* Forum pager */
+div.blockypager {
+	margin: auto;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	border: 1px solid #101010;
+	border-radius: 6px;
+	background: url(monotonic/header.png) top left repeat-x;
+	max-width: 1200px;
+}
+div.blockypager a {
+	color: #666666 !important;
+	display: inline-block;
+	line-height: 22px;
+	text-decoration: none;
+	text-align: center;
+	height: 22px;
+	width: 22px;
+	padding: 2px;
+	margin: 0 2px;
+}
+div.blockypager a.current {
+	color: #DCC7AB !important;
+	font-weight: bold !important;
+}
+
+div.blockypager a:hover, div.blockypager a.current:hover {
+	color: #FFCA8B !important;
+}
+
+#stafftools_xlistreport td:not(.colhead2), #stafftools_addfilter td:not(.colhead2){ 
+padding: 1px;
+}
+#stafftools_xlistreport input , #stafftools_addfilter input{
+font-size:80%;
+width:96%;
+margin-left:auto;
+margin-right:auto;
+padding:1px;
+}
+span.style_bbcode {
+	padding:5px;
+	margin:0px;
+}
+div.center {
+text-align:center;
+width:100%;
+}
+div.center > * {
+margin-left:auto;
+margin-right:auto;
+}
+div .oldpaste {
+width:245px;
+display:inline-block;
+margin-left:1px;
+margin-top:5px;
+font-weight:bold;
+vertical-align:middle;
+}
+
+/* ---- New base structure                                           ---- */
+/* ---- note: this stuff needs the !important tags for php overrides ---- */
+
+/* ---- generic values ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+.colhead					{ color: #DCC7AB; text-shadow: 2px 2px 3px #000000; }
+.colhead2 a					{ color: #C0C0C0; }
+.colhead2 a:hover				{ color: #FFFFFF; }
+h1						{ font-size: 12px; padding-top: 2px !important; }
+.sublink					{ font-style: italic; font-size: 7pt; font-weight: normal; }
+img						{ border: none !important; }
+
+
+/* ---- index page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#recent_news div.frametop_alt,
+#poll div.frametop_alt,
+#recent_wiki div.frametop_alt,
+#stats div.frametop_alt,
+#server_load div.frametop_alt			{ display: none; }
+
+#poll table,
+#recent_wiki table,
+#stats table					{ width: 350px; }
+
+
+#recent_news div.frame,
+#poll div.frame,
+#recent_wiki div.frame,
+#stats div.frame				{ display: table; }
+
+#recent_news div.frame				{ display: block; background: #1B1B1B url(monotonic/header.png) top left repeat-x;
+						  border: 1px solid #101010; border-radius: 6px; text-align: left;
+						  position: relative; top: 23px; width: 600px; right: 250px;
+						  margin: auto; padding-top: 8px; padding-left: 18px; padding-right: 18px; margin-bottom: 800px; }
+#poll div.frame					{ text-align: center; position: absolute; width: 350px; top: 26%; left: 59%; margin: auto; }
+#recent_wiki div.frame				{ text-align: left; position: absolute; width: 350px; top: 63%; left: 59%; margin: auto; }
+#stats div.frame				{ text-align: left; position: absolute;
+						  width: 350px; top: 86%; left: 59%; margin: auto; margin-bottom: -200px; }
+#server_load div.frame				{ text-align: left; position: relative;
+						  width: 600px; top: -600px; right: 250px; margin: auto; margin-bottom: -200px; }
+#irc_link					{ margin-left: auto; margin-right: auto; display: block; max-width: 900px; text-align: right; height: 2em; }
+
+
+#recent_wiki table				{ border: 1px solid #101010 !important; background: #1B1B1B url(monotonic/header.png) top left repeat-x; }
+#recent_wiki table td				{ padding: 4px; }
+#recent_wiki table tr:nth-of-type(1) td		{ text-shadow: 2px 2px 3px #000000; padding-bottom: 16px; border-bottom: none; }
+#recent_wiki table tr:last-of-type td		{ border-bottom: none; }
+
+#stats table					{ border: 1px solid #101010 !important; }
+#stats table td					{ text-align: left; padding: 4px; }
+#stats table tr:last-of-type td			{ border-bottom: none; }
+
+#poll .interiortable				{ border: 1px solid #101010 !important; }
+#poll table tr td				{ display: block; }
+#poll table tr:last-of-type td			{ border-bottom: none; }
+
+/* ---- forum index page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#forums_index .rollup_btn			{ display: none; }
+
+#forums_index table:not(.maintable)		{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; padding-top: 0px; border: 1px solid #101010; } 
+
+#forums_index table td:nth-of-type(1)		{ width: auto !important; }
+#forums_index table td:nth-of-type(2)		{ text-align: right; width: 50px !important; }
+#forums_index table td:nth-of-type(3)		{ text-align: left; width: 50px !important; }
+#forums_index table td:nth-of-type(4)		{ text-align: left; width: 160px !important; }
+
+#forums_index table tr				{ line-height: 1.1; border-bottom: 1px solid #101010; }
+#forums_index table tr:nth-of-type(1) td	{ text-align:left; color: #888888; text-shadow: 2px 2px 2px #000000; padding-top: 2px; border-bottom: none !important; }
+#forums_index table tr:nth-of-type(2) td	{ padding: 4px; }
+#forums_index table tr:last-of-type td		{ padding-top: 6px; border-bottom: none; }
+
+/* ---- forum first child (enter any subforum) ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#forums .maintable td:nth-of-type(1)		{ width: auto !important; }
+#forums .maintable td:nth-of-type(2)		{ text-align: right !important; width: 150px !important; }
+#forums .maintable td:nth-of-type(3)		{ text-align: left !important; width: 100px !important; }
+
+#forums .maintable tr				{ line-height: 1.1; }
+#forums .maintable tr:nth-of-type(1) td		{ padding: 4px; }
+#forums .maintable tr:last-of-type td		{ padding-top: 6px; border-bottom: none; }
+
+/* ---- game key gifting page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#keygifts .rollup_btn				{ display: none; }
+div#keygifts					{ width: 100% !important; }
+#keygifts .frame				{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; }
+
+#keygifts .frame td				{ padding: 4px; }
+#keygifts .frame tr:nth-of-type(1) td		{ border: none; padding-bottom: 12px; }
+#keygifts .frame tr:last-of-type td		{ border: none; }
+
+/* ---- members page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#users .maintable				{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; }
+
+#users .maintable td				{ padding: 4px; }
+#users .maintable tr:nth-of-type(1) td		{ border: none; padding-bottom: 12px; }
+#users .maintable tr:last-of-type td		{ border: none; }
+
+#users .maintable td:nth-of-type(1)		{ text-align: left; width: auto; }
+#users .maintable td:nth-of-type(2)		{ text-align: center; width: 130px; }
+#users .maintable td:nth-of-type(3)		{ text-align: center; width: 130px; }
+#users .maintable td:nth-of-type(4)		{ text-align: right; width: 90px; }
+#users .maintable td:nth-of-type(5)		{ text-align: center; width: 50px; }
+#users .maintable td:nth-of-type(6)		{ text-align: center; width: 120px; }
+#users .maintable td:nth-of-type(7)		{ text-align: right; width: 50px; }
+
+/* ---- torrent browse page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+span .pager a					{ color: #DCC7AB; line-height: 2.5; font-weight: normal !important; font-size: 11px; }
+span .pager a:hover				{ color: #FFCA8B; font-weight: normal !important; }
+span .gray					{ color: #666666; font-weight: normal !important; opacity: 0.6; font-size: 11px; }
+span.freeleech					{ padding: 3px; font-size: 7pt; background: #101010 url(monotonic/freeleech.gif) center no-repeat; border: 1px solid #101010; border-radius: 14px;
+						  box-shadow: 0px 0px 8px #FFCA8B; color: transparent !important; padding-left: 6px; padding-right: 26px; position: relative; top: -3px; text-shadow: none !important; }
+
+
+#browse #torrent_search img.rss_icon		{ display: inline; box-sizing: border-box; width: 66px; height: 11px; padding-left: 66px; background: url(monotonic/rss.gif); }
+#browse .rollup_btn, #browse .frametop_alt	{ display: none; }
+#browse #torrent_search				{ width: 1200px; margin-left: auto !important; margin-right: auto !important; }
+#browse #torrent_search .frame			{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; border: 1px solid #101010; border-radius: 6px;
+						  padding: 4px 0px 16px 0px; width: 1200px !important; margin-bottom:16px; } 
+#browse #torrent_search table			{ padding-top: 25px; }
+
+#browse #torrent_search #search_categories .frame_simple		{ width: auto; margin-left: 70px; }
+#browse #torrent_search #search_categories .frame_simple>span		{ text-align: left; }
+
+#search_categories span				{ white-space: nowrap; margin: 0; width: 16em; display: inline-block; }
+
+#browse #search_results				{ width: 1200px; margin-left: auto !important; margin-right: auto !important; }
+#browse #search_results .frame			{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; border: 1px solid #101010; border-radius: 6px; width: 1200px !important; margin-bottom:16px; } 
+
+#search_results .frame td			{ padding-top: 0px; padding-bottom: 0px; }
+#search_results .frame td:nth-of-type(1)	{ text-align: left !important; width: 40px !important; }
+#search_results .frame td:nth-of-type(2)	{ white-space: nowrap; width: auto !important; }
+#search_results .frame td:nth-of-type(3)	{ text-align: right !important; width: 30px !important; }
+#search_results .frame td:nth-of-type(4)	{ text-align: center !important; width: 40px !important; }
+#search_results .frame td:nth-of-type(5)	{ text-align: left !important; width: 50px !important; }
+#search_results .frame td:nth-of-type(6)	{ text-align: center !important; width: 40px !important; }
+#search_results .frame td:nth-of-type(7)	{ text-align: center !important; width: 50px !important; }
+#search_results .frame td:nth-of-type(8)	{ text-align: center !important; width: 40px !important; }
+#search_results .frame td:nth-of-type(9)	{ text-align: center !important; width: 20px !important; }
+#search_results .frame td:nth-of-type(10)	{ text-align: center !important; width: 40px !important; }
+#search_results .frame td:nth-of-type(11)	{ text-align: left !important; width: 120px !important; }
+
+#search_results .frame tr:nth-of-type(1) td	{ padding-bottom: 0px; font-weight: normal; color: #DCC7AB; text-shadow: 2px 2px 3px #000000; text-align: left; line-height: 1.0 !important; border: none; }
+#search_results .frame tr:nth-of-type(2) td	{ padding-top: 6px; padding-bottom: 4px; }
+#search_results .frame tr:last-of-type td	{ border: none; }
+#search_results .frame span			{ color: #888888; padding-bottom: 0px; line-height: 1.0 !important; }
+
+.golden_torrent_table_row			{ background: #101010 url(monotonic/golden_torrent_row.png) top left repeat-x; color: #888888; text-shadow: 2px 2px 3px #000000; }
+.golden_torrent_table_row_highlight		{ background: #161616 url(monotonic/golden_torrent_row.png) top left repeat-x; color: #888888; text-shadow: 2px 2px 3px #000000; }
+.flagged_torrent_table_row			{ background: #101010 url(monotonic/flagged_torrent_row.png) top left repeat-x; color: #888888; text-shadow: 2px 2px 3px #000000; }
+.flagged_torrent_table_row_highlight		{ background: #161616 url(monotonic/flagged_torrent_row.png) top left repeat-x; color: #888888; text-shadow: 2px 2px 3px #000000; }
+
+#featured_torrents .frame			{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; border: 1px solid #101010; width: 1200px !important; margin-bottom:16px; }
+#featured_torrents .frame td			{ padding-top: 0px; padding-bottom: 0px; }
+#featured_torrents .frame td:nth-of-type(1)	{ text-align: left !important; width: 40px !important; }
+#featured_torrents .frame td:nth-of-type(2)	{ white-space: nowrap; width: auto !important; }
+#featured_torrents .frame td:nth-of-type(3)	{ text-align: right !important; width: 30px !important; }
+#featured_torrents .frame td:nth-of-type(4)	{ text-align: center !important; width: 40px !important; }
+#featured_torrents .frame td:nth-of-type(5)	{ text-align: left !important; width: 50px !important; }
+#featured_torrents .frame td:nth-of-type(6)	{ text-align: center !important; width: 40px !important; }
+#featured_torrents .frame td:nth-of-type(7)	{ text-align: center !important; width: 50px !important; }
+#featured_torrents .frame td:nth-of-type(8)	{ text-align: center !important; width: 40px !important; }
+#featured_torrents .frame td:nth-of-type(9)	{ text-align: center !important; width: 20px !important; }
+#featured_torrents .frame td:nth-of-type(10)	{ text-align: center !important; width: 40px !important; }
+#featured_torrents .frame td:nth-of-type(11)	{ text-align: left !important; width: 120px !important; }
+
+#featured_torrents .frame tr:nth-of-type(1) td	{ padding-bottom: 8px; font-weight: normal; color: #DCC7AB; text-shadow: 2px 2px 3px #000000; text-align: left; line-height: 1.0 !important; border: none; }
+#featured_torrents .frame tr:nth-of-type(2) td	{ padding-bottom: 4px; }
+#featured_torrents .frame tr:last-of-type td	{ border: none; }
+#featured_torrents .frame span			{ color: #888888; padding-bottom: 0px; line-height: 1.0 !important; }
+
+#tzcd						{ line-height: 11px; margin-top: 0px; padding-left: 5px; }
+#tzcd img					{ vertical-align: middle; }
+
+/* ---- torrent details page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#details .rollup_btn				{ display: none; }
+#details h1					{ margin-top: -3px; text-align: center; }
+#details .maintable .colhead			{ padding: 9px 0px 14px 0px !important; line-height: 1.2; }
+#details .maintable				{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; border: 1px solid #101010; border-radius: 6px;
+						  padding: 0px 20px 16px 20px; width: 1200px !important; margin-bottom:16px;} 
+#details .maintable tr:nth-of-type(1) td	{ border: none; padding-bottom: 6px; }
+#details .maintable tr:last-of-type td		{ border: none; }
+
+#details .maintable td				{ padding: 4px; }
+
+#details .main					{ border: none; width: 640px; }
+#details .main td				{ border: none; !important; border-bottom: 1px solid #101010 !important; }
+#details .main td:nth-of-type(1)		{ width: auto; }
+#details .main td:nth-of-type(2)		{ width: 60px; }
+#details .main tr:last-of-type td		{ border: none !important; }
+
+#details .frame					{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; }
+#details .frame tr:nth-of-type(1) td		{ border: none; padding-bottom: 9px; }
+#details .frame tr:last-of-type td		{ border: none; }
+
+#recommended_torrents .frame td:nth-of-type(1)	{ text-align: center !important; width: 40px !important; }
+#recommended_torrents .frame td:nth-of-type(2)	{ white-space: nowrap; width: auto !important; }
+#recommended_torrents .frame td:nth-of-type(3)	{ text-align: right !important; width: 30px !important; }
+#recommended_torrents .frame td:nth-of-type(4)	{ text-align: center !important; width: 40px !important; }
+#recommended_torrents .frame td:nth-of-type(5)	{ text-align: left !important; width: 50px !important; }
+#recommended_torrents .frame td:nth-of-type(6)	{ text-align: center !important; width: 40px !important; }
+#recommended_torrents .frame td:nth-of-type(7)	{ text-align: center !important; width: 50px !important; }
+#recommended_torrents .frame td:nth-of-type(8)	{ text-align: center !important; width: 40px !important; }
+#recommended_torrents .frame td:nth-of-type(9)	{ text-align: center !important; width: 20px !important; }
+#recommended_torrents .frame td:nth-of-type(10)	{ text-align: center !important; width: 40px !important; }
+#recommended_torrents .frame td:nth-of-type(11)	{ text-align: left !important; width: 120px !important; }
+
+/* ---- upload page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#upload .maintable				{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; }
+#upload .maintable tr:nth-of-type(1) td		{ border: none; padding-bottom: 9px; }
+#upload .maintable tr:nth-of-type(5) td		{ border: none; }
+#upload .maintable tr:nth-of-type(6) td		{ border: none; }
+#upload .maintable tr:last-of-type td		{ border: none; }
+
+/* ---- requests page ---- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#viewrequests .table				{ background: #1B1B1B url(monotonic/header.png) top left repeat-x !important; }
+#viewrequests td				{ border: none !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- THE END ---- */
