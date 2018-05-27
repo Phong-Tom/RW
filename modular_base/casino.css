@@ -1,0 +1,63 @@
+/* Casino With.in CSS stylesheet    */
+/* Creator:             Mugi - 2018 */
+/* Created for:        RetroWith.in */
+
+/* NOTE: every value in this css is marked as !important in order to override possible values given by parent style. */
+/* This override is a beta and might not fully function under styles other than monotonic                            */
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+body[id^="blackjack"] h1			{ margin-bottom: 27px !important; }
+body[id^="blackjack"]				{ background: #000000 url(casino/wall.png) bottom right fixed !important; }
+body[id^="blackjack"] #header			{ background: url(casino/logo.png) no-repeat; background-position: top center; padding-bottom: 0px; }
+body[id^="blackjack"] #sitewrap			{ background: transparent !important; border: none !important; }
+body[id^="blackjack"] #wrapper			{ background: transparent !important; border: none !important; }
+body[id^="blackjack"] #content			{ background: transparent !important; border: none !important; }
+body[id^="blackjack"] #frametop			{ background: transparent !important; border: none !important; }
+body[id^="blackjack"] #frame			{ background: transparent !important; border: none !important; }
+#blackjack_stats table				{ background: transparent !important; border: none !important; }
+#blackjack #shbox				{ background: transparent !important; border: none !important; }
+
+#blackjack_top table				{ margin:0 auto !important; }
+#blackjack_top ul				{ margin:4px !important; }
+#blackjack .blackjack_table			{ background: transparent url(casino/table.png) top center no-repeat !important;
+				 		  border-left: 2px solid #003815 !important; border-right: 2px solid #003815 !important;
+						  border-top: 2px solid #003815! important; border-bottom: 3px solid #003815 !important;
+						  box-shadow: inset 1px 1px 60px #000000!important;
+						  border-bottom-left-radius:600px !important;
+						  border-bottom-right-radius:600px !important;
+						  padding:10px !important; padding-top: 8px !important; padding-bottom: auto !important; margin-bottom:16px !important;
+						  color: #FFFFFF !important; text-shadow: 2px 2px 3px #000000 !important;
+						  margin-left:auto !important; margin-right:auto !important;
+						  max-width: 800px !important; min-height: 300px !important; }
+
+#blackjack .blackjack_table td			{ padding:5px !important; }
+#blackjack_stats table				{ position: relative !important; color: #888888 !important; margin-left:auto !important; margin-right:auto !important;
+						  background: url(casino/back.png) !important; }
+#blackjack_stats table td			{ padding-top: 2px !important; padding-bottom: 4px !important; border-bottom: 1px solid #101010 !important; }
+
+#blackjack_stats table tr:nth-of-type(1) td	{ color: #888888 !important; }
+#blackjack_stats table tr:nth-of-type(2) td	{ color: #808080 !important; }
+#blackjack_stats table tr:nth-of-type(3) td	{ color: #787878 !important; }
+#blackjack_stats table tr:nth-of-type(4) td	{ color: #707070 !important; }
+#blackjack_stats table tr:nth-of-type(5) td	{ color: #686868 !important; }
+#blackjack_stats table tr:nth-of-type(6) td	{ color: #606060 !important; }
+#blackjack_stats table tr:nth-of-type(7) td	{ color: #585858 !important; }
+#blackjack_stats table tr:nth-of-type(8) td	{ color: #505050 !important; border: none !important; }
+
+#blackjack .rollup_btn				{ display: none !important; }
+#blackjack #content				{ margin: auto !important; }
+#blackjack .frametop				{ color: #888888 !important; height: 20px !important; background: url(casino/back.png) !important; border: 1px solid #000000 !important;
+						  border-radius: 6px !important; max-width:640px !important; text-align: center !important; text-shadow: 2px 2px 3px #000000 !important;
+						  margin-bottom: 12px !important; }
+
+#blackjack table[class^="main center"]		{ display: table !important; background: transparent !important; color: #888888 !important; border: none !important; max-width:640px !important;
+						  text-align: center !important; }
+#blackjack table[class^="main center"] .frame	{ text-align: center !important; }
+
+#blackjack #shbox				{ display: block !important; text-align: center !important; max-width: 800px !important; margin: auto !important; padding: 12px !important;
+						  background: url(casino/back.png) !important; border: 1px solid #000000 !important; border-radius: 6px !important; }
+
+#blackjack #shbox input				{ color: #888888 !important; padding: 2px 4px 2px 4px; background: #1B1B1B !important;
+				 	  	  border: 1px solid #000000; border-radius: 6px; box-shadow: 0px 0px 9px #003815; }
+#blackjack #shbox input:hover			{ color: #888888 !important; padding: 2px 4px 2px 4px; background: #1B1B1B !important;
+			  			  border: 1px solid #000000; border-radius: 6px; box-shadow: 0px 0px 18px #003815; }

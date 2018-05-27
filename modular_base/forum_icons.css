@@ -1,0 +1,24 @@
+/* modular CSS stylesheet framework */
+/* Creator:             Mugi - 2018 */
+/* Created for:        RetroWith.in */
+
+/*	Forum icons	*/
+
+img.unlockednew, img.unlocked, img.lockednew, img.locked, 
+img.unlockednewpost, img.unlockedpost, img.lockednewpost, 
+img.lockedpost, img.link {
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right:5px;
+}
+
+img.link 		{ background-image: url(forum_icons/forum_link.png); }
+img.lockednewpost 	{ background-image: url(forum_icons/forum_locked_posted_new.png); }
+img.lockedpost 		{ background-image: url(forum_icons/forum_locked_posted_nonew.png); }
+img.lockednew 		{ background-image: url(forum_icons/forum_lockednew.png); }
+img.locked 		{ background-image: url(forum_icons/forum_lockednonew.png); }
+img.unlockednew 	{ background-image: url(forum_icons/forum_new.png); }
+img.unlocked 		{ background-image: url(forum_icons/forum_nonew.png); }
+img.unlockednewpost 	{ background-image: url(forum_icons/forum_posted_new.png); }
+img.unlockedpost 	{ background-image: url(forum_icons/forum_posted_nonew.png); }
+

@@ -1,0 +1,20 @@
+/* modular CSS stylesheet framework */
+/* Creator:             Mugi - 2018 */
+/* Created for:        RetroWith.in */
+
+/*	Ratio Colors	*/
+
+.rinf 			{ color: #000; }
+.rnone 			{ color: #000; }
+.r00 			{ color: #f00; }
+.r01 			{ color: #e00; }
+.r02 			{ color: #d00; }
+.r03 			{ color: #c00; }
+.r04 			{ color: #b00; }
+.r05 			{ color: #a00; }
+.r06 			{ color: #900; }
+.r07 			{ color: #800; }
+.r08			{ color: #700; }
+.r09 			{ color: #600; }
+.r10,.r20,.r50,.r99	{ color: #080; font-weight:bold;
+}

@@ -1,0 +1,73 @@
+/* modular CSS stylesheet framework */
+/* Creator:             Mugi - 2018 */
+/* Created for:        RetroWith.in */
+
+/* Category icons */
+
+img.remix			{ background: #2F4879 url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/music_remix.png); }
+img.other			{ background: #2F4879 url(category_icons/music_other.png); }
+img.arranged			{ background: #2F4879 url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/music_arranged.png); }
+img.game			{ background: #2F4879 url(category_icons/music_ost.png); }
+img.roms			{ background: #2F4879 url(category_icons/misc_romz.png); }
+img.emulators			{ background: #2F4879 url(category_icons/emulators.png); }
+img.movies			{ background: #2F4879 url(category_icons/videos.png); }
+img.abandonware			{ background: #000000 url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/abandonware.png); }
+img.dos				{ background: #000000 url(category_icons/dos.png); }
+img.windows			{ background: #000000 url(category_icons/windows.png); }
+img.windows3x			{ background: #2F4879 url(category_icons/windows3x.png); }
+img.mac				{ background: #000000 url(category_icons/mac.png); }
+img.linux			{ background: #000000 url(category_icons/linux.png); }
+img.acorn			{ background: #000000 url(category_icons/acorn.png); }
+img.amstrad			{ background: #000000 url(category_icons/amstrad.png); }
+img.pc_other			{ background: #000000 url(category_icons/pc_other.png); }
+img.misc			{ background: #2F4879 url(category_icons/misc.png); }
+img.bios			{ background: #2F4879 url(category_icons/bios.png); }
+img.gameguides			{ background: #2F4879 url(category_icons/guides.png); }
+img.retro_computing		{ background: #2F4879 url(category_icons/retro_computing.png); }
+img.cell			{ background: #2F4879 url(category_icons/cellphone.png); }
+img.atari_2600			{ background: #FFFFFF url(category_icons/atari_2600.png); }
+img.bandai_wswan		{ background: #00ADEF url(category_icons/bandai_wswan.png); }
+img.nec_turbografx		{ background: #00ADEF url(category_icons/nec_turbografx.png); }
+img.neogeo_pocket		{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/neogeo_pocket.png), linear-gradient(135deg, #FFFF00 50%, #0000FF 50%); }
+img.neogeo			{ background: url(category_icons/neogeo.png), linear-gradient(135deg, #FFFF00 50%, #0000FF 50%); }
+img.nintendo_64			{ background: #FF2020 url(category_icons/nintendo_64.png); }
+img.nintendo_gameboy		{ background: #FF2020 url(category_icons/nintendo_gameboy.png); }
+img.nintendo_gcn		{ background: #FF2020 url(category_icons/nintendo_gcn.png); }
+img.nintendo_nes		{ background: #FF1515 url(category_icons/nintendo_nes.png); }
+img.nintendo_snes		{ background: #FF2020 url(category_icons/nintendo_snes.png); }
+img.nintendo_gba		{ background: #FF2020 url(category_icons/nintendo_gba.png); }
+img.nintendo_ds			{ background: #FF2020 url(category_icons/nintendo_ds.png); }
+img.panasonic_3do		{ background: #00ADEF url(category_icons/panasonic_3do.png); }
+img.phillips_cdi		{ background: #00ADEF url(category_icons/philips_cdi.png); }
+img.sega_dreamcast		{ background: #FF7B10 url(category_icons/sega_dreamcast.png); }
+img.sega_gamegear		{ background: #FF7B10 url(category_icons/sega_gamegear.png); }
+img.sega_genesis		{ background: #FF7B10 url(category_icons/sega_genesis.png); }
+img.sega_saturn			{ background: #FF7B10 url(category_icons/sega_saturn.png); }
+img.sega_cd			{ background: #FF7B10 url(category_icons/sega_cd.png); }
+img.sony_ps2			{ background: #2E3092 url(category_icons/sony_ps2.png); }
+img.sony_psx			{ background: #2E3092 url(category_icons/sony_psx.png); }
+img.sony_psp			{ background: #2E3092 url(category_icons/sony_psp.png); }
+img.amiga_computer		{ background: #FFFFFF url(category_icons/amiga_computer.png); }
+img.amiga_cd32 			{ background: #FFFFFF url(category_icons/amiga_cd32.png); }
+img.atari_jaguar		{ background: #FFFFFF url(category_icons/atari_jaguar.png); }
+img.atari_lynx			{ background: #FFFFFF url(category_icons/atari_lynx.png); }
+img.commodore_computer		{ background: #FFFFFF url(category_icons/commodore_computer.png); }
+img.mattel_intellivision	{ background: #FFFFFF url(category_icons/mattel_intellivision.png); }
+img.mb_vectrex			{ background: url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/mb_vectrex.png); }
+img.nintendo_virtualboy		{ background: #FF2020 url(https://dev9.blacklabel-translations.com/rwx/modular_base/category_icons/nintendo_virtualboy.png); }
+img.sega_mastersystem		{ background: #FF7B10 url(category_icons/sega_mastersystem.png); }
+img.sinclair_computer		{ background: #000000 url(category_icons/sinclair_computer.png); }
+img.nintendo_other		{ background: #FF2020 url(category_icons/nintendo_other.png); }
+img.sega_other			{ background: #FF7B10 url(category_icons/sega_other.png); }
+img.atari_other			{ background: #FFFFFF url(category_icons/atari_other.png); }
+img.commodore_other		{ background: #FFFFFF url(category_icons/commodore_other.png); }
+img.magazines			{ background: #2F4879 url(category_icons/magazines.png); }
+img.arcade			{ background: #FFFFFF url(category_icons/arcade.png); }
+img.game_books			{ background: #2F4879 url(category_icons/game_books.png); }
+img.dos_utils 			{ background: #000000 url(category_icons/dos_utils.png); }
+img.zodiac 			{ background: #8560A9 url(category_icons/zodiac.png); }
+img.microsoft_xbox 		{ background: #98CF16 url(category_icons/microsoft_xbox.png); }
+img.fiction			{ background: #2F4879 url(category_icons/fiction.png); }
+img.technical			{ background: #2F4879 url(category_icons/technical.png); }
+img.tabletop			{ background: #2F4879 url(category_icons/tabletop.png); }
+img.other_books			{ background: #2F4879 url(category_icons/other_books.png); }

@@ -1,0 +1,22 @@
+/* modular CSS stylesheet framework */
+/* Creator:             Mugi - 2018 */
+/* Created for:        RetroWith.in */
+
+/* userclass colors */
+
+span.userlink { font-weight: bold; text-decoration: underline; }
+
+span.UC_GLOBAL_ADMINISTRATOR 	{ color: #DD0000; text-shadow: #444 1px 1px 1px; }
+span.UC_TECH_ADMINISTRATOR 		{ color: #DD0000; text-shadow: #444 1px 1px 1px; }
+span.UC_ADMINISTRATOR 			{ color: #DD0000; text-shadow: #444 1px 1px 1px; }
+span.UC_TECH_MODERATOR 			{ color: #882222; text-shadow: #444 1px 1px 1px; }
+span.UC_MODERATOR 				{ color: #882222; text-shadow: #444 1px 1px 1px; }
+span.UC_TORRENT_MODERATOR 		{ color: #885555; text-shadow: #444 1px 1px 1px; }
+span.UC_FORUM_MODERATOR 		{ color: #885555; text-shadow: #444 1px 1px 1px; }
+span.UC_HONORED_MEMBER 			{ color: #6c0060; }
+span.UC_ELITE_VIP 				{ color: #005000; }
+span.UC_VIP 					{ color: #007700; }
+span.UC_ELITE_USER 				{ color: #0000AA; }
+span.UC_POWER_USER 				{ color: #2F4879; }
+span.UC_USER 					{ color: #000000; }
+span.UC_PEASANT 				{ color: #000000; }
